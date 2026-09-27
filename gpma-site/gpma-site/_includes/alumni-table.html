@@ -1,8 +1,0 @@
-<table class="tbl tbl--alumni">
-  <thead><tr><th>{% assign k = "name" %}{% include t.html %}</th><th>{% assign k = "degree" %}{% include t.html %}</th><th>{% assign k = "thesis" %}{% include t.html %}</th><th>{% assign k = "current_position" %}{% include t.html %}</th></tr></thead>
-  <tbody>
-  {% for p in alumni %}
-    <tr><td><a href="{{ p.url | relative_url }}">{{ p.name }}</a></td><td class="nowrap">{% assign _en = p.degree %}{% assign _pt = p.degree_pt %}{% include tx.html %}</td><td>{{ p.thesis }}</td><td>{% if p.now and p.now != "" %}{% assign _en = p.now %}{% assign _pt = p.now_pt %}{% include tx.html %}{% endif %}</td></tr>
-  {% endfor %}
-  </tbody>
-</table>

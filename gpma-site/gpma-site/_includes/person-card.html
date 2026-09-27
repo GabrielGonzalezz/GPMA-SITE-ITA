@@ -1,6 +1,0 @@
-<a class="pcard" href="{{ p.url | relative_url }}">
-  <span class="pcard__img">{% include avatar.html %}</span>
-  <span class="pcard__name">{% if p.short_name %}{{ p.short_name }}{% else %}{{ p.name }}{% endif %}</span>
-  <span class="pcard__role">{% assign _en = p.position %}{% assign _pt = p.position_pt %}{% include tx.html %}</span>
-  {% if p.research and p.research != "" %}<span class="pcard__topic">{% assign _en = p.research %}{% assign _pt = p.research_pt %}{% include tx.html %}</span>{% endif %}
-</a>
