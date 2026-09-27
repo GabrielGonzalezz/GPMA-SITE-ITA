@@ -1,0 +1,62 @@
+# General texts. Fields ending in _pt are the Portuguese (pt-BR) version.
+name: GPMA
+full_name: Additive Manufacturing Research Group
+full_name_pt: Grupo de Pesquisa em Manufatura Aditiva
+institution: Instituto Tecnológico de Aeronáutica
+institution_short: ITA
+division: Mechanical Engineering Division
+lab: Aerospace Structures Laboratory
+since: 2016
+hero_kicker: Aerospace Structures Laboratory · ITA · São José dos Campos, Brazil
+hero_text: GPMA investigates how to design, simulate and qualify structures produced by additive manufacturing. Our work spans the mesostructure of extruded material, the mechanics of 3D-printed fibre-reinforced composites, optimal design for manufacturing and laser powder bed fusion for aerospace components.
+research_intro: Research at GPMA combines experimental characterisation, multiscale modelling and structural optimisation. We build methods that connect process parameters to material properties and design decisions, and validate them on printed specimens and components.
+projects_intro: Ongoing work is funded by FAPESP, CNPq and CAPES and carried out with academic and industrial partners.
+people_intro: The group is coordinated by Prof. Rafael Thiago Luiz Ferreira and brings together graduate and undergraduate researchers from ITA's Graduate Program in Aeronautical and Mechanical Engineering.
+facilities_intro: GPMA operates polymer and composite printers at the Aerospace Structures Laboratory of ITA's Mechanical Engineering Division, with access to the laboratory's mechanical testing equipment and to computing resources for process and structural simulation.
+software_intro: Methods and codes developed by the group, with the publications that describe them.
+collab_intro: GPMA works with universities, research institutes and industry in Brazil and abroad through joint projects, co-supervision of graduate students and research stays.
+affiliations_intro: Institutions with which GPMA holds research collaborations, and agencies that fund the group's work.
+address: Instituto Tecnológico de Aeronáutica, Divisão de Engenharia Mecânica, Laboratório de Estruturas Aeroespaciais. Praça Marechal Eduardo Gomes, 50, Vila das Acácias, São José dos Campos – SP, 12228-900, Brazil
+email: rthiago@ita.br
+phone: +55 12 3947-6976
+facebook: https://www.facebook.com/GPMA.ITA/
+ita_url: https://www.ita.br
+department_url: https://www.mec.ita.br/
+join_intro: GPMA admits graduate students through ITA's Graduate Program in Aeronautical and Mechanical Engineering (PG-EAM) and hosts undergraduate researchers from ITA. Prospective members are encouraged to contact the coordinator before applying.
+join_paths:
+- title: M.Sc. and Ph.D.
+  text: Apply to the Graduate Program in Aeronautical and Mechanical Engineering. Before the application period, write to the coordinator with a CV, academic transcript and a short statement of research interests.
+  link: https://www.ita.br/pg
+  link_label: ITA graduate admissions
+  title_pt: Mestrado e doutorado
+  text_pt: Candidate-se ao Programa de Pós-Graduação em Engenharia Aeronáutica e Mecânica. Antes do período de inscrição, escreva ao coordenador com currículo, histórico escolar e uma breve descrição dos seus interesses de pesquisa.
+  link_label_pt: Pós-graduação no ITA
+- title: Undergraduate research
+  text: ITA undergraduates may join ongoing projects in printing, mechanical testing and simulation through the institutional scientific initiation programme (PIBIC/CNPq) or as volunteers.
+  link: ''
+  link_label: ''
+  title_pt: Iniciação científica
+  text_pt: Alunos de graduação do ITA podem participar de projetos em andamento em impressão, ensaios mecânicos e simulação, pelo programa institucional de iniciação científica (PIBIC/CNPq) ou como voluntários.
+  link_label_pt: ''
+- title: Postdoctoral and visiting researchers
+  text: Postdoctoral positions are announced through funded projects such as CPE-FLYMOV (FAPESP). Visiting researchers and exchange students are welcome through the group's partner institutions.
+  link: https://fapesp.br/oportunidades/
+  link_label: FAPESP opportunities
+  title_pt: Pós-doutorado e pesquisadores visitantes
+  text_pt: Vagas de pós-doutorado são divulgadas por meio de projetos financiados, como o CPE-FLYMOV (FAPESP). Pesquisadores visitantes e alunos de intercâmbio são bem-vindos por meio das instituições parceiras do grupo.
+  link_label_pt: Oportunidades FAPESP
+division_pt: Divisão de Engenharia Mecânica
+lab_pt: Laboratório de Estruturas Aeroespaciais
+hero_statement: Designing, simulating and testing 3D‑printed structures for aerospace.
+hero_statement_pt: Projetando, simulando e ensaiando estruturas impressas em 3D para a indústria aeroespacial.
+hero_kicker_pt: Laboratório de Estruturas Aeroespaciais · ITA · São José dos Campos
+hero_text_pt: O GPMA investiga como projetar, simular e qualificar estruturas produzidas por manufatura aditiva. Nossa pesquisa abrange a mesoestrutura do material extrudado, a mecânica de compósitos reforçados por fibras impressos em 3D, o projeto ótimo para manufatura e a fusão em leito de pó a laser para componentes aeroespaciais.
+research_intro_pt: A pesquisa no GPMA combina caracterização experimental, modelagem multiescala e otimização estrutural. Desenvolvemos métodos que conectam parâmetros de processo a propriedades de material e decisões de projeto, validados em corpos de prova e componentes impressos.
+projects_intro_pt: Os projetos em andamento são financiados por FAPESP, CNPq e CAPES e desenvolvidos com parceiros acadêmicos e industriais.
+people_intro_pt: O grupo é coordenado pelo Prof. Rafael Thiago Luiz Ferreira e reúne pesquisadores de pós-graduação e graduação do Programa de Pós-Graduação em Engenharia Aeronáutica e Mecânica do ITA.
+facilities_intro_pt: O GPMA opera impressoras de polímeros e compósitos no Laboratório de Estruturas Aeroespaciais da Divisão de Engenharia Mecânica do ITA, com acesso aos equipamentos de ensaios mecânicos do laboratório e a recursos computacionais para simulação de processos e estruturas.
+software_intro_pt: Métodos e códigos desenvolvidos pelo grupo, com as publicações que os descrevem.
+collab_intro_pt: O GPMA colabora com universidades, institutos de pesquisa e indústria no Brasil e no exterior por meio de projetos conjuntos, coorientação de alunos de pós-graduação e estágios de pesquisa.
+affiliations_intro_pt: Instituições com as quais o GPMA mantém colaborações de pesquisa e agências que financiam o trabalho do grupo.
+address_pt: Instituto Tecnológico de Aeronáutica, Divisão de Engenharia Mecânica, Laboratório de Estruturas Aeroespaciais. Praça Marechal Eduardo Gomes, 50, Vila das Acácias, São José dos Campos – SP, 12228-900, Brasil
+join_intro_pt: O GPMA admite alunos de pós-graduação pelo Programa de Pós-Graduação em Engenharia Aeronáutica e Mecânica (PG-EAM) do ITA e recebe alunos de iniciação científica do ITA. Recomendamos que os interessados entrem em contato com o coordenador antes de se candidatar.

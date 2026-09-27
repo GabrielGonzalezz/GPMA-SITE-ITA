@@ -1,0 +1,37 @@
+# Fields ending in _pt are the Portuguese (pt-BR) version. If empty, the English text is shown.
+items:
+- title: Process modelling of material extrusion
+  figure: /assets/img/research/process.svg
+  text: We model how extruded filaments spread, fuse and leave voids. VOLCO-X, a voxel-based simulator developed with Loughborough University and the University of Nottingham, predicts the mesostructure of fused filament fabrication parts from the toolpath and supplies it to finite-element models of stiffness and strength.
+  ref_label: Macedo et al., Additive Manufacturing, 2021
+  ref_doi: 10.1016/j.addma.2021.101900
+  title_pt: Modelagem do processo de extrusão de material
+  text_pt: Modelamos como os filamentos extrudados se espalham, se fundem e deixam vazios. O VOLCO-X, simulador baseado em voxels desenvolvido com a Loughborough University e a University of Nottingham, prevê a mesoestrutura de peças de fabricação por filamento fundido a partir da trajetória e a fornece a modelos de elementos finitos de rigidez e resistência.
+- title: Continuous-fibre reinforced thermoplastics
+  figure: /assets/img/research/composites.svg
+  text: 'Experimental characterisation and failure modelling of 3D-printed continuous carbon-fibre composites: elastic properties by asymptotic homogenisation, representative volume elements from micrographs, mechanism-based failure criteria, translaminar fracture and moisture effects.'
+  ref_label: Dutra et al., Composites Science and Technology, 2021
+  ref_doi: 10.1016/j.compscitech.2021.108962
+  title_pt: Termoplásticos reforçados com fibra contínua
+  text_pt: 'Caracterização experimental e modelagem de falha de compósitos de fibra de carbono contínua impressos em 3D: propriedades elásticas por homogeneização assintótica, elementos de volume representativo a partir de micrografias, critérios de falha baseados em mecanismos, fratura translaminar e efeitos da umidade.'
+- title: Optimal design for additive manufacturing
+  figure: /assets/img/research/optimisation.svg
+  text: Fibre-path and material-orientation optimisation based on strength criteria, variable-stiffness laminates under buckling, and topology optimisation formulated so that the resulting layouts can be deposited by the printer.
+  ref_label: Ferreira & Ashcroft, Struct. Multidisc. Optim., 2020
+  ref_doi: 10.1007/s00158-019-02462-w
+  title_pt: Projeto ótimo para manufatura aditiva
+  text_pt: Otimização de trajetórias de fibra e de orientações de material com base em critérios de resistência, laminados de rigidez variável sob flambagem e otimização topológica formulada para que os layouts resultantes possam ser depositados pela impressora.
+- title: Architected and multi-material structures
+  figure: /assets/img/research/architected.svg
+  text: Honeycombs and lattices designed at the toolpath level, including bimaterial cells printed with short-fibre composites, with effective properties obtained by asymptotic homogenisation and verified by mechanical testing.
+  ref_label: Dias Filho et al., Composite Structures, 2026
+  ref_doi: 10.1016/j.compstruct.2026.120071
+  title_pt: Estruturas arquitetadas e multimateriais
+  text_pt: Colmeias e lattices projetadas no nível da trajetória, incluindo células bimateriais impressas com compósitos de fibra curta, com propriedades efetivas obtidas por homogeneização assintótica e verificadas por ensaios mecânicos.
+- title: Metal additive manufacturing
+  figure: /assets/img/research/metal.svg
+  text: Within the FAPESP–Embraer research centre CPE-FLYMOV, we develop thermomechanical simulations of laser powder bed fusion, homogenisation-based design of support structures to limit distortion, and the characterisation of surface residual stresses in titanium parts for aerospace applications.
+  ref_label: Dias Filho et al., MATEC Web of Conferences, 2026
+  ref_doi: 10.1051/matecconf/202642203003
+  title_pt: Manufatura aditiva de metais
+  text_pt: No centro de pesquisa FAPESP–Embraer CPE-FLYMOV, desenvolvemos simulações termomecânicas da fusão em leito de pó a laser, projeto de estruturas de suporte baseado em homogeneização para limitar distorções e a caracterização de tensões residuais superficiais em peças de titânio para aplicações aeroespaciais.
