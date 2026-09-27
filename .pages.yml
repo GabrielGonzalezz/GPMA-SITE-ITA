@@ -1,0 +1,572 @@
+# ------------------------------------------------------------------
+#  Pages CMS configuration – https://pagescms.org
+#  Log in at app.pagescms.org with GitHub, open this repository and
+#  edit everything through forms. No code needed.
+# ------------------------------------------------------------------
+media:
+  input: assets/img
+  output: /assets/img
+content:
+- name: people
+  label: People
+  type: collection
+  path: _people
+  filename: '{fields.name}.md'
+  view:
+    fields:
+    - name
+    - position
+    - status
+    primary: name
+    sort:
+    - order
+    - name
+    default:
+      sort: order
+      order: asc
+  fields:
+  - name: name
+    label: Full name
+    type: string
+    required: true
+  - name: short_name
+    label: Short name (optional, shown on cards)
+    type: string
+  - name: role
+    label: Role (used to group people)
+    type: select
+    required: true
+    options:
+      values:
+      - Professor
+      - Ph.D. student
+      - M.Sc. student
+      - Undergraduate researcher
+      - Postdoc
+      - Alumni
+  - name: position
+    label: Position shown on the page (e.g. M.Sc. student, Ph.D. 2020)
+    type: string
+  - name: position_pt
+    label: Position shown on the page (e.g. M.Sc. student, Ph.D. 2020) (PT-BR)
+    type: string
+  - name: status
+    label: Status
+    type: select
+    required: true
+    options:
+      values:
+      - current
+      - alumni
+  - name: order
+    label: Order (smaller = first)
+    type: number
+  - name: photo
+    label: Photo (square
+    at least 400×400 px): null
+    type: image
+  - name: research
+    label: Research topic
+    type: string
+  - name: research_pt
+    label: Research topic (PT-BR)
+    type: string
+  - name: period
+    label: Period (e.g. 2024–)
+    type: string
+  - name: degree
+    label: 'Alumni: degree and year (e.g. Ph.D. 2020)'
+    type: string
+  - name: degree_pt
+    label: 'Alumni: degree and year (e.g. Ph.D. 2020) (PT-BR)'
+    type: string
+  - name: thesis
+    label: 'Alumni: thesis title'
+    type: string
+  - name: now
+    label: 'Alumni: current position'
+    type: string
+  - name: now_pt
+    label: 'Alumni: current position (PT-BR)'
+    type: string
+  - name: email
+    label: E-mail (public)
+    type: string
+  - name: phone
+    label: Phone
+    type: string
+  - name: office
+    label: Office
+    type: string
+  - name: office_pt
+    label: Office (PT-BR)
+    type: string
+  - name: lattes
+    label: Lattes URL
+    type: string
+  - name: scholar
+    label: Google Scholar URL
+    type: string
+  - name: orcid
+    label: ORCID URL
+    type: string
+  - name: researchgate
+    label: ResearchGate URL
+    type: string
+  - name: linkedin
+    label: LinkedIn URL
+    type: string
+  - name: website
+    label: Personal website
+    type: string
+  - name: pub_key
+    label: Surname as it appears in author lists (links publications to this page)
+    type: string
+  - name: bio_pt
+    label: Bio (PT-BR)
+    type: rich-text
+  - name: body
+    label: Bio
+    type: rich-text
+- name: publications
+  label: Publications
+  type: file
+  path: _data/publications.yml
+  fields:
+  - name: items
+    label: Publications
+    type: object
+    list: true
+    fields:
+    - name: year
+      label: Year
+      type: number
+      required: true
+    - name: title
+      label: Title
+      type: string
+      required: true
+    - name: authors
+      label: Authors (e.g. A. B. Silva, R. T. L. Ferreira)
+      type: string
+    - name: venue
+      label: Journal / conference
+      type: string
+    - name: type
+      label: Type
+      type: select
+      options:
+        values:
+        - Journal
+        - Conference
+        - Book chapter
+        - Thesis
+    - name: line
+      label: Research line
+      type: select
+      options:
+        values:
+        - FFF process & materials
+        - Process simulation
+        - Continuous-fibre composites
+        - Design optimisation
+        - Architected & bimaterial structures
+        - Homogenisation & micromechanics
+        - Metal AM (L-PBF)
+    - name: doi
+      label: DOI (only the code, e.g. 10.1016/j.addma.2021.101900)
+      type: string
+- name: news
+  label: News
+  type: file
+  path: _data/news.yml
+  fields:
+  - name: items
+    label: News (newest first)
+    type: object
+    list: true
+    fields:
+    - name: date
+      label: Date (e.g. Mar 2026)
+      type: string
+    - name: title
+      label: Title
+      type: string
+      required: true
+    - name: title_pt
+      label: Title (PT-BR)
+      type: string
+    - name: text
+      label: Text
+      type: text
+    - name: text_pt
+      label: Text (PT-BR)
+      type: text
+    - name: image
+      label: Image (figure from the paper or a photo)
+      type: image
+    - name: link
+      label: Link (optional)
+      type: string
+- name: hero
+  label: Home hero
+  type: file
+  path: _data/hero.yml
+  fields:
+  - name: animation_caption
+    label: Animation caption
+    type: string
+  - name: animation_caption_pt
+    label: Animation caption (PT-BR)
+    type: string
+- name: projects
+  label: Projects
+  type: file
+  path: _data/projects.yml
+  fields:
+  - name: items
+    label: Projects
+    type: object
+    list: true
+    fields:
+    - name: title
+      label: Title
+      type: string
+      required: true
+    - name: title_pt
+      label: Title (PT-BR)
+      type: string
+    - name: period
+      label: Period
+      type: string
+    - name: period_pt
+      label: Period (PT-BR)
+      type: string
+    - name: funding
+      label: Funding
+      type: string
+    - name: funding_pt
+      label: Funding (PT-BR)
+      type: string
+    - name: status
+      label: Status
+      type: select
+      options:
+        values:
+        - current
+        - past
+    - name: text
+      label: Description
+      type: text
+    - name: text_pt
+      label: Description (PT-BR)
+      type: text
+    - name: link
+      label: Link (optional)
+      type: string
+- name: research
+  label: Research lines
+  type: file
+  path: _data/research.yml
+  fields:
+  - name: items
+    label: Research lines
+    type: object
+    list: true
+    fields:
+    - name: title
+      label: Title
+      type: string
+    - name: title_pt
+      label: Title (PT-BR)
+      type: string
+    - name: figure
+      label: Figure (image)
+      type: image
+    - name: text
+      label: Description
+      type: text
+    - name: text_pt
+      label: Description (PT-BR)
+      type: text
+    - name: ref_label
+      label: Key reference (e.g. Dutra et al., Composites Sci. Tech., 2021)
+      type: string
+    - name: ref_doi
+      label: Key reference DOI
+      type: string
+- name: facilities
+  label: Facilities
+  type: file
+  path: _data/facilities.yml
+  fields:
+  - name: items
+    label: Facilities
+    type: object
+    list: true
+    fields:
+    - name: title
+      label: Name
+      type: string
+    - name: title_pt
+      label: Name (PT-BR)
+      type: string
+    - name: model
+      label: Model / location
+      type: string
+    - name: model_pt
+      label: Model / location (PT-BR)
+      type: string
+    - name: photo
+      label: Photo
+      type: image
+    - name: text
+      label: Description
+      type: text
+    - name: text_pt
+      label: Description (PT-BR)
+      type: text
+    - name: specs
+      label: Technical specs (one per line)
+      type: string
+      list: true
+    - name: specs_pt
+      label: Technical specs (one per line) (PT-BR)
+      type: string
+      list: true
+- name: software
+  label: Software & data
+  type: file
+  path: _data/software.yml
+  fields:
+  - name: items
+    label: Items
+    type: object
+    list: true
+    fields:
+    - name: title
+      label: Name
+      type: string
+    - name: title_pt
+      label: Name (PT-BR)
+      type: string
+    - name: kind
+      label: Kind (Software, Dataset, Method)
+      type: string
+    - name: kind_pt
+      label: Kind (Software, Dataset, Method) (PT-BR)
+      type: string
+    - name: text
+      label: Description
+      type: text
+    - name: text_pt
+      label: Description (PT-BR)
+      type: text
+    - name: links
+      label: Links
+      type: object
+      list: true
+      fields:
+      - name: label
+        label: Label
+        type: string
+      - name: label_pt
+        label: Label (PT-BR)
+        type: string
+      - name: url
+        label: URL
+        type: string
+- name: collaborations
+  label: Partners & logos
+  type: file
+  path: _data/collaborations.yml
+  fields:
+  - name: items
+    label: Partners
+    type: object
+    list: true
+    fields:
+    - name: name
+      label: Institution
+      type: string
+    - name: short
+      label: Short name (shown if there is no logo)
+      type: string
+    - name: country
+      label: Country
+      type: string
+    - name: country_pt
+      label: Country (PT-BR)
+      type: string
+    - name: group
+      label: Group
+      type: select
+      options:
+        values:
+        - Home institution
+        - Academic partners
+        - Industry & research institutes
+        - Funding agencies
+    - name: logo
+      label: Logo (transparent PNG or SVG)
+      type: image
+    - name: url
+      label: Website
+      type: string
+    - name: work
+      label: What we do together (shown in Collaboration)
+      type: text
+    - name: work_pt
+      label: What we do together (shown in Collaboration) (PT-BR)
+      type: text
+- name: group
+  label: Site texts & contact
+  type: file
+  path: _data/group.yml
+  fields:
+  - name: name
+    label: Acronym
+    type: string
+  - name: full_name
+    label: Full name (English)
+    type: string
+  - name: full_name_pt
+    label: Full name (English) (PT-BR)
+    type: string
+  - name: full_name_pt
+    label: Full name (Portuguese)
+    type: string
+  - name: institution
+    label: Institution
+    type: string
+  - name: institution_short
+    label: Institution (short)
+    type: string
+  - name: since
+    label: Founded in
+    type: number
+  - name: ita_url
+    label: Institution website
+    type: string
+  - name: department_url
+    label: Department website
+    type: string
+  - name: division
+    label: Division
+    type: string
+  - name: division_pt
+    label: Division (PT-BR)
+    type: string
+  - name: lab
+    label: Laboratory
+    type: string
+  - name: lab_pt
+    label: Laboratory (PT-BR)
+    type: string
+  - name: hero_statement
+    label: Home – headline over the animation
+    type: string
+  - name: hero_statement_pt
+    label: Home – headline (PT-BR)
+    type: string
+  - name: hero_kicker
+    label: Home – small line above the intro
+    type: string
+  - name: hero_kicker_pt
+    label: Home – small line above the title (PT-BR)
+    type: string
+  - name: hero_text
+    label: Home – intro paragraph
+    type: text
+  - name: hero_text_pt
+    label: Home intro (PT-BR)
+    type: text
+  - name: research_intro
+    label: Research intro
+    type: text
+  - name: research_intro_pt
+    label: Research intro (PT-BR)
+    type: text
+  - name: projects_intro
+    label: Projects intro
+    type: text
+  - name: projects_intro_pt
+    label: Projects intro (PT-BR)
+    type: text
+  - name: people_intro
+    label: People intro
+    type: text
+  - name: people_intro_pt
+    label: People intro (PT-BR)
+    type: text
+  - name: facilities_intro
+    label: Facilities intro
+    type: text
+  - name: facilities_intro_pt
+    label: Facilities intro (PT-BR)
+    type: text
+  - name: software_intro
+    label: Software intro
+    type: text
+  - name: software_intro_pt
+    label: Software intro (PT-BR)
+    type: text
+  - name: affiliations_intro
+    label: Affiliations intro
+    type: text
+  - name: affiliations_intro_pt
+    label: Affiliations intro (PT-BR)
+    type: text
+  - name: email
+    label: Contact e-mail
+    type: string
+  - name: phone
+    label: Phone
+    type: string
+  - name: address
+    label: Address
+    type: text
+  - name: address_pt
+    label: Address (PT-BR)
+    type: text
+  - name: facebook
+    label: Facebook URL
+    type: string
+  - name: collab_intro
+    label: Collaboration intro
+    type: text
+  - name: collab_intro_pt
+    label: Collaboration intro (PT-BR)
+    type: text
+  - name: join_intro
+    label: Join intro
+    type: text
+  - name: join_intro_pt
+    label: Join intro (PT-BR)
+    type: text
+  - name: join_paths
+    label: Ways to join
+    type: object
+    list: true
+    fields:
+    - name: title
+      label: Title
+      type: string
+    - name: title_pt
+      label: Title (PT-BR)
+      type: string
+    - name: text
+      label: Text
+      type: text
+    - name: text_pt
+      label: Text (PT-BR)
+      type: text
+    - name: link
+      label: Link
+      type: string
+    - name: link_label
+      label: Link label
+      type: string
+    - name: link_label_pt
+      label: Link label (PT-BR)
+      type: string
