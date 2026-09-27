@@ -1,0 +1,215 @@
+---
+layout: default
+---
+{% assign g = site.data.group %}
+{% assign current_people = site.people | where: "status", "current" | sort: "order" %}
+{% assign alumni = site.people | where: "status", "alumni" | sort: "order" %}
+{% assign pubs = site.data.publications.items | sort: "year" | reverse %}
+{% assign journals = site.data.publications.items | where: "type", "Journal" %}
+
+<section class="lhero" id="stage">
+  <div class="lhero__media">
+    <div class="slide"><canvas class="slide__canvas" data-tone="dark" data-place="right" role="img" aria-label="{{ site.data.hero.animation_caption }}"></canvas><canvas class="slide__gl" aria-hidden="true"></canvas><div class="hud" aria-hidden="true"></div></div>
+  </div>
+  <div class="wrap lhero__content">
+    <p class="lhero__kicker">GPMA · {% assign _en = g.full_name %}{% assign _pt = g.full_name_pt %}{% include tx.html %} · ITA</p>
+    <h1 class="lhero__title">{% assign _en = g.hero_statement %}{% assign _pt = g.hero_statement_pt %}{% include tx.html %}</h1>
+    <p class="lhero__actions">
+      <a class="hbtn" href="#research">{% assign k = "research_areas" %}{% include t.html %} <svg class="ico" viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="9"/><path d="M7 10h6M10.5 7l3 3-3 3"/></svg></a>
+      <a class="hbtn" href="{{ '/publications/' | relative_url }}">{% assign k = "nav_publications" %}{% include t.html %} <svg class="ico" viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="9"/><path d="M7 10h6M10.5 7l3 3-3 3"/></svg></a>
+    </p>
+  </div>
+  <p class="lhero__cap">{% assign _en = site.data.hero.animation_caption %}{% assign _pt = site.data.hero.animation_caption_pt %}{% include tx.html %}</p>
+  <button type="button" class="stage__pause" id="stagePause" aria-pressed="false" data-pause="{{ site.data.i18n.pause.en }}|{{ site.data.i18n.pause.pt }}" data-play="{{ site.data.i18n.play.en }}|{{ site.data.i18n.play.pt }}">II</button>
+</section>
+<section class="factbar">
+  <div class="wrap">
+    <dl class="facts">
+      <div><dt>{% assign k = "founded" %}{% include t.html %}</dt><dd>{{ g.since }}</dd></div>
+      <div><dt>{% assign k = "journal_articles" %}{% include t.html %}</dt><dd>{{ journals | size }}+</dd></div>
+      <div><dt>{% assign k = "graduate_alumni" %}{% include t.html %}</dt><dd>{{ alumni | size }}+</dd></div>
+      <div><dt>{% assign k = "partner_institutions" %}{% include t.html %}</dt><dd>{{ site.data.collaborations.items | size | minus: 4 }}+</dd></div>
+    </dl>
+  </div>
+</section>
+
+<section class="affil" id="affiliations" aria-labelledby="affil-h">
+  <div class="wrap">
+    <div class="affil__head">
+      <h2 id="affil-h">{% assign k = "sec_affiliations" %}{% include t.html %}</h2>
+      <p>{% assign _en = g.affiliations_intro %}{% assign _pt = g.affiliations_intro_pt %}{% include tx.html %}</p>
+    </div>
+    <div class="affil__grid">
+      {% assign home = site.data.collaborations.items | where: "group", "Home institution" | first %}
+      <div class="affil__col affil__col--home">
+        <p class="affil__lbl">{% assign _en = "Home institution" %}{% assign _pt = site.data.i18n.groups["Home institution"] %}{% include tx.html %}</p>
+        <a class="affil__home" href="{{ home.url }}">
+          <span class="affil__slot"><img class="affil__logo" data-scale="1.25" src="{{ home.logo | relative_url }}" alt="{{ home.name }}"></span>
+          <span class="affil__name">{{ home.name }}<span class="affil__sub">{% assign _en = g.division %}{% assign _pt = g.division_pt %}{% include tx.html %} · {% assign _en = g.lab %}{% assign _pt = g.lab_pt %}{% include tx.html %}</span></span>
+        </a>
+      </div>
+      {% assign groups = "Academic partners|Industry & research institutes|Funding agencies" | split: "|" %}
+      {% assign mods = "academic|industry|funding" | split: "|" %}
+      {% for grp in groups %}
+      <div class="affil__col affil__col--{{ mods[forloop.index0] }}">
+        <p class="affil__lbl">{% assign _en = grp %}{% assign _pt = site.data.i18n.groups[grp] %}{% include tx.html %}</p>
+        <ul class="affil__logos">
+          {% for c in site.data.collaborations.items %}{% if c.group == grp %}
+          <li><a class="affil__slot" href="{{ c.url }}" title="{{ c.name }}">{% if c.logo and c.logo != "" %}<img class="affil__logo" src="{{ c.logo | relative_url }}" alt="{{ c.name }}" loading="lazy">{% else %}<span class="affil__word" aria-label="{{ c.name }}">{{ c.short }}</span>{% endif %}</a></li>
+          {% endif %}{% endfor %}
+        </ul>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="research">
+  <div class="wrap">
+    {% assign sh_key = "sec_research" %}{% assign sh_en = g.research_intro %}{% assign sh_pt = g.research_intro_pt %}{% include sechead.html %}
+    <div class="areas">
+      {% for r in site.data.research.items %}
+      <article class="area">
+        <div class="area__fig"><img src="{{ r.figure | relative_url }}" alt="" loading="lazy"></div>
+        <div class="area__txt">
+          <h3>{% assign _en = r.title %}{% assign _pt = r.title_pt %}{% include tx.html %}</h3>
+          <p>{% assign _en = r.text %}{% assign _pt = r.text_pt %}{% include tx.html %}</p>
+          {% if r.ref_doi and r.ref_doi != "" %}<p class="area__ref">{% assign k = "key_reference" %}{% include t.html %}: <a href="https://doi.org/{{ r.ref_doi }}">{{ r.ref_label }}</a></p>{% endif %}
+        </div>
+      </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="sec sec--alt" id="projects">
+  <div class="wrap">
+    {% assign sh_key = "sec_projects" %}{% assign sh_en = g.projects_intro %}{% assign sh_pt = g.projects_intro_pt %}{% include sechead.html %}
+    <div class="projects">
+      {% for pr in site.data.projects.items %}{% if pr.status == "current" %}
+      <article class="project">
+        <p class="project__meta">{% assign _en = pr.funding %}{% assign _pt = pr.funding_pt %}{% include tx.html %} · {% assign _en = pr.period %}{% assign _pt = pr.period_pt %}{% include tx.html %}</p>
+        <h3>{% if pr.link and pr.link != "" %}<a href="{{ pr.link }}">{% assign _en = pr.title %}{% assign _pt = pr.title_pt %}{% include tx.html %}</a>{% else %}{% assign _en = pr.title %}{% assign _pt = pr.title_pt %}{% include tx.html %}{% endif %}</h3>
+        <p>{% assign _en = pr.text %}{% assign _pt = pr.text_pt %}{% include tx.html %}</p>
+      </article>
+      {% endif %}{% endfor %}
+    </div>
+    <h3 class="subhead">{% assign k = "completed_projects" %}{% include t.html %}</h3>
+    <table class="tbl">
+      <thead><tr><th>{% assign k = "period" %}{% include t.html %}</th><th>{% assign k = "project" %}{% include t.html %}</th><th>{% assign k = "funding" %}{% include t.html %}</th></tr></thead>
+      <tbody>
+      {% for pr in site.data.projects.items %}{% if pr.status == "past" %}
+        <tr><td class="nowrap">{{ pr.period }}</td><td>{% assign _en = pr.title %}{% assign _pt = pr.title_pt %}{% include tx.html %}</td><td>{% assign _en = pr.funding %}{% assign _pt = pr.funding_pt %}{% include tx.html %}</td></tr>
+      {% endif %}{% endfor %}
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section class="sec" id="people">
+  <div class="wrap">
+    {% assign sh_key = "sec_people" %}{% assign sh_en = g.people_intro %}{% assign sh_pt = g.people_intro_pt %}{% include sechead.html %}
+    <div class="pgrid">
+      {% for p in current_people %}{% include person-card.html %}{% endfor %}
+    </div>
+    <h3 class="subhead">{% assign k = "alumni" %}{% include t.html %}</h3>
+    {% include alumni-table.html %}
+    <p class="more"><a href="{{ '/people/' | relative_url }}">{% assign k = "all_members" %}{% include t.html %}</a></p>
+  </div>
+</section>
+
+<section class="sec sec--alt" id="facilities">
+  <div class="wrap">
+    {% assign sh_key = "sec_facilities" %}{% assign sh_en = g.facilities_intro %}{% assign sh_pt = g.facilities_intro_pt %}{% include sechead.html %}
+    <div class="fgrid">
+      {% for f in site.data.facilities.items %}
+      <article class="fac">
+        {% if f.photo and f.photo != "" %}<div class="fac__img"><img src="{{ f.photo | relative_url }}" alt="{{ f.model }}" loading="lazy"></div>{% endif %}
+        <h3>{% assign _en = f.title %}{% assign _pt = f.title_pt %}{% include tx.html %}</h3>
+        <p class="fac__model">{% assign _en = f.model %}{% assign _pt = f.model_pt %}{% include tx.html %}</p>
+        <p>{% assign _en = f.text %}{% assign _pt = f.text_pt %}{% include tx.html %}</p>
+        {% if f.specs and f.specs.size > 0 %}
+        <ul class="fac__specs l-en">{% for sp in f.specs %}<li>{{ sp }}</li>{% endfor %}</ul>
+        <ul class="fac__specs l-pt">{% if f.specs_pt and f.specs_pt.size > 0 %}{% for sp in f.specs_pt %}<li>{{ sp }}</li>{% endfor %}{% else %}{% for sp in f.specs %}<li>{{ sp }}</li>{% endfor %}{% endif %}</ul>
+        {% endif %}
+      </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="publications">
+  <div class="wrap">
+    {% assign sh_key = "sec_publications" %}{% assign sh_en = "" %}{% assign sh_pt = "" %}{% include sechead.html %}
+    <ol class="pubs">
+      {% for pub in pubs limit: 6 %}{% include pub.html %}{% endfor %}
+    </ol>
+    <p class="more"><a href="{{ '/publications/' | relative_url }}">{% assign k = "all_publications" %}{% include t.html %} ({{ site.data.publications.items | size }})</a></p>
+  </div>
+</section>
+
+<section class="sec sec--alt" id="software">
+  <div class="wrap">
+    {% assign sh_key = "sec_software" %}{% assign sh_en = g.software_intro %}{% assign sh_pt = g.software_intro_pt %}{% include sechead.html %}
+    <div class="soft">
+      {% for s in site.data.software.items %}
+      <article class="softitem">
+        <p class="softitem__kind">{% assign _en = s.kind %}{% assign _pt = s.kind_pt %}{% include tx.html %}</p>
+        <h3>{% assign _en = s.title %}{% assign _pt = s.title_pt %}{% include tx.html %}</h3>
+        <p>{% assign _en = s.text %}{% assign _pt = s.text_pt %}{% include tx.html %}</p>
+        <ul class="softitem__links">{% for l in s.links %}<li><a href="{{ l.url }}">{% assign _en = l.label %}{% assign _pt = l.label_pt %}{% include tx.html %}</a></li>{% endfor %}</ul>
+      </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="news">
+  <div class="wrap">
+    {% assign sh_key = "sec_news" %}{% assign sh_en = "" %}{% assign sh_pt = "" %}{% include sechead.html %}
+    <div class="newsgrid">
+      {% for n in site.data.news.items limit: 6 %}
+      <article class="ncard">
+        {% if n.image and n.image != "" %}<a class="ncard__img" href="{{ n.link }}" tabindex="-1" aria-hidden="true"><img src="{{ n.image | relative_url }}" alt="" loading="lazy"></a>{% endif %}
+        <p class="ncard__date">{{ n.date }}</p>
+        <h3>{% if n.link and n.link != "" %}<a href="{{ n.link }}">{% assign _en = n.title %}{% assign _pt = n.title_pt %}{% include tx.html %}</a>{% else %}{% assign _en = n.title %}{% assign _pt = n.title_pt %}{% include tx.html %}{% endif %}</h3>
+        <p>{% assign _en = n.text %}{% assign _pt = n.text_pt %}{% include tx.html %}</p>
+      </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="sec sec--alt" id="collaboration">
+  <div class="wrap">
+    {% assign sh_key = "sec_collaboration" %}{% assign sh_en = g.collab_intro %}{% assign sh_pt = g.collab_intro_pt %}{% include sechead.html %}
+    <dl class="collab">
+      {% for c in site.data.collaborations.items %}{% if c.work and c.work != "" and c.group != "Home institution" %}
+      <div>
+        <dt><a href="{{ c.url }}">{{ c.name }}</a> <span>{% assign _en = c.country %}{% assign _pt = c.country_pt %}{% include tx.html %}</span></dt>
+        <dd>{% assign _en = c.work %}{% assign _pt = c.work_pt %}{% include tx.html %}</dd>
+      </div>
+      {% endif %}{% endfor %}
+    </dl>
+    <p class="collab__cta">{% assign k = "collab_cta" %}{% include t.html %} {{ g.email }}.</p>
+  </div>
+</section>
+
+<section class="sec sec--navy" id="join">
+  <div class="wrap">
+    {% assign sh_key = "sec_join" %}{% assign sh_en = g.join_intro %}{% assign sh_pt = g.join_intro_pt %}{% include sechead.html %}
+    <div class="joinpaths">
+      {% for j in g.join_paths %}
+      <article>
+        <h3>{% assign _en = j.title %}{% assign _pt = j.title_pt %}{% include tx.html %}</h3>
+        <p>{% assign _en = j.text %}{% assign _pt = j.text_pt %}{% include tx.html %}</p>
+        {% if j.link and j.link != "" %}<p><a href="{{ j.link }}">{% assign _en = j.link_label %}{% assign _pt = j.link_label_pt %}{% include tx.html %}</a></p>{% endif %}
+      </article>
+      {% endfor %}
+    </div>
+    <div class="joinbox">
+      <p><strong>{% assign k = "contact_person" %}{% include t.html %}</strong> · Prof. Rafael Thiago Luiz Ferreira</p>
+      <p class="joinbox__mail"><span id="mail">{{ g.email }}</span> <button class="btn btn--light btn--sm" data-copy="mail" type="button">{% assign k = "copy_address" %}{% include t.html %}</button></p>
+    </div>
+  </div>
+</section>

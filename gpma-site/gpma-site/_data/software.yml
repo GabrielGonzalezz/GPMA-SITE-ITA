@@ -1,0 +1,38 @@
+# Fields ending in _pt are the Portuguese (pt-BR) version. If empty, the English text is shown.
+items:
+- title: VOLCO-X
+  kind: Software
+  text: Voxel-based simulation of material distribution and voids in extrusion additive manufacturing. Developed with Loughborough University and the University of Nottingham.
+  links:
+  - label: Paper (2021)
+    url: https://doi.org/10.1016/j.addma.2021.101900
+    label_pt: Artigo (2021)
+  - label: Open-access version
+    url: https://repository.lboro.ac.uk/articles/journal_contribution/VOLCO-X_Numerical_simulation_of_material_distribution_and_voids_in_extrusion_additive_manufacturing/14216024
+    label_pt: Versão de acesso aberto
+  - label: Microstructure optimisation (2024)
+    url: https://doi.org/10.1016/j.addma.2024.104430
+    label_pt: Otimização de microestruturas (2024)
+  kind_pt: Software
+  text_pt: Simulação baseada em voxels da distribuição de material e de vazios na manufatura aditiva por extrusão. Desenvolvido com a Loughborough University e a University of Nottingham.
+  title_pt: VOLCO-X
+- title: Asymptotic homogenisation with commercial FE software
+  kind: Method
+  text: A complete pre- and post-processing methodology to compute effective properties of composites and printed microstructures with a commercial finite-element package.
+  links:
+  - label: Paper (2020)
+    url: https://doi.org/10.1016/j.compstruct.2020.112305
+    label_pt: Artigo (2020)
+  kind_pt: Método
+  text_pt: Metodologia completa de pré e pós-processamento para calcular propriedades efetivas de compósitos e microestruturas impressas com um software comercial de elementos finitos.
+  title_pt: Homogeneização assintótica com software comercial de EF
+- title: Optimal fibre orientation for strength
+  kind: Method
+  text: Optimality conditions based on Hashin's criteria to find fibre orientations that maximise strength, for fibre-steered and printed composites.
+  links:
+  - label: Paper (2020)
+    url: https://doi.org/10.1007/s00158-019-02462-w
+    label_pt: Artigo (2020)
+  kind_pt: Método
+  text_pt: Condições de otimalidade baseadas nos critérios de Hashin para encontrar orientações de fibra que maximizam a resistência, em compósitos com fibras direcionadas e impressos.
+  title_pt: Orientação ótima de fibras para resistência

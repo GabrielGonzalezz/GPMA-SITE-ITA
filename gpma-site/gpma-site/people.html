@@ -1,0 +1,26 @@
+---
+layout: default
+title: People
+permalink: /people/
+---
+{% assign current_people = site.people | where: "status", "current" | sort: "order" %}
+{% assign alumni = site.people | where: "status", "alumni" | sort: "order" %}
+<section class="pagehead">
+  <div class="wrap">
+    <p class="crumbs"><a href="{{ '/' | relative_url }}">{% assign k = "home" %}{% include t.html %}</a> / {% assign k = "nav_people" %}{% include t.html %}</p>
+    <h1>{% assign k = "nav_people" %}{% include t.html %}</h1>
+    <p class="lead">{% assign _en = site.data.group.people_intro %}{% assign _pt = site.data.group.people_intro_pt %}{% include tx.html %}</p>
+  </div>
+</section>
+<section class="sec sec--tight">
+  <div class="wrap">
+    <h2 class="subhead">{% assign k = "faculty" %}{% include t.html %}</h2>
+    <div class="pgrid">{% for p in current_people %}{% if p.role == "Professor" %}{% include person-card.html %}{% endif %}{% endfor %}</div>
+    <h2 class="subhead">{% assign k = "graduate_students" %}{% include t.html %}</h2>
+    <div class="pgrid">{% for p in current_people %}{% if p.role == "Ph.D. student" or p.role == "M.Sc. student" or p.role == "Postdoc" %}{% include person-card.html %}{% endif %}{% endfor %}</div>
+    <h2 class="subhead">{% assign k = "undergraduates" %}{% include t.html %}</h2>
+    <div class="pgrid">{% for p in current_people %}{% if p.role == "Undergraduate researcher" %}{% include person-card.html %}{% endif %}{% endfor %}</div>
+    <h2 class="subhead">{% assign k = "alumni" %}{% include t.html %}</h2>
+    {% include alumni-table.html %}
+  </div>
+</section>

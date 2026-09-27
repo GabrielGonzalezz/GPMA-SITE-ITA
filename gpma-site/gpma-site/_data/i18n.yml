@@ -1,0 +1,92 @@
+# Interface labels in both languages
+nav_research: { en: "Research", pt: "Pesquisa" }
+nav_projects: { en: "Projects", pt: "Projetos" }
+nav_people: { en: "People", pt: "Pessoas" }
+nav_facilities: { en: "Facilities", pt: "Infraestrutura" }
+nav_publications: { en: "Publications", pt: "Publicações" }
+nav_software: { en: "Software", pt: "Software" }
+nav_news: { en: "News", pt: "Notícias" }
+nav_collaboration: { en: "Collaboration", pt: "Colaboração" }
+nav_join: { en: "Join", pt: "Participe" }
+contact: { en: "Contact", pt: "Contato" }
+menu: { en: "Menu", pt: "Menu" }
+home: { en: "Home", pt: "Início" }
+research_areas: { en: "Research areas", pt: "Linhas de pesquisa" }
+sec_research: { en: "Research", pt: "Pesquisa" }
+sec_projects: { en: "Current projects", pt: "Projetos em andamento" }
+sec_people: { en: "People", pt: "Pessoas" }
+sec_facilities: { en: "Facilities", pt: "Infraestrutura" }
+sec_publications: { en: "Latest publications", pt: "Publicações recentes" }
+sec_software: { en: "Software and data", pt: "Software e dados" }
+sec_news: { en: "News", pt: "Notícias" }
+sec_collaboration: { en: "Collaboration", pt: "Colaboração" }
+sec_affiliations: { en: "Affiliations and funding", pt: "Afiliações e financiamento" }
+sec_join: { en: "Join the group", pt: "Faça parte do grupo" }
+key_reference: { en: "Key reference", pt: "Referência principal" }
+completed_projects: { en: "Completed projects", pt: "Projetos concluídos" }
+period: { en: "Period", pt: "Período" }
+project: { en: "Project", pt: "Projeto" }
+funding: { en: "Funding", pt: "Financiamento" }
+alumni: { en: "Alumni", pt: "Egressos" }
+name: { en: "Name", pt: "Nome" }
+degree: { en: "Degree", pt: "Titulação" }
+thesis: { en: "Thesis", pt: "Tese / dissertação" }
+current_position: { en: "Current position", pt: "Posição atual" }
+all_members: { en: "All members and alumni", pt: "Todos os membros e egressos" }
+all_publications: { en: "All publications", pt: "Todas as publicações" }
+founded: { en: "Founded", pt: "Fundação" }
+journal_articles: { en: "Journal articles", pt: "Artigos em periódicos" }
+graduate_alumni: { en: "Graduate alumni", pt: "Egressos de pós-graduação" }
+partner_institutions: { en: "Partner institutions", pt: "Instituições parceiras" }
+collab_cta: { en: "To discuss joint projects, testing campaigns or co-supervision, contact", pt: "Para projetos conjuntos, campanhas de ensaios ou coorientação, escreva para" }
+contact_person: { en: "Contact", pt: "Contato" }
+copy_address: { en: "Copy address", pt: "Copiar endereço" }
+faculty: { en: "Faculty", pt: "Docente" }
+graduate_students: { en: "Graduate students", pt: "Pós-graduandos" }
+undergraduates: { en: "Undergraduate researchers", pt: "Iniciação científica" }
+people_lead: { en: "Faculty, students and alumni of GPMA.", pt: "Docente, alunos e egressos do GPMA." }
+pubs_lead: { en: "Journal articles and conference papers by GPMA members and collaborators, most recent first.", pt: "Artigos em periódicos e congressos de membros e colaboradores do GPMA, dos mais recentes aos mais antigos." }
+research_area: { en: "Research area", pt: "Linha de pesquisa" }
+all_areas: { en: "All areas", pt: "Todas as linhas" }
+type: { en: "Type", pt: "Tipo" }
+all_types: { en: "All types", pt: "Todos os tipos" }
+journal: { en: "Journal", pt: "Periódico" }
+conference: { en: "Conference", pt: "Congresso" }
+search: { en: "Search", pt: "Buscar" }
+search_ph: { en: "Title, author or venue", pt: "Título, autor ou veículo" }
+no_match: { en: "No publication matches these filters.", pt: "Nenhuma publicação corresponde aos filtros." }
+of: { en: "of", pt: "de" }
+biography: { en: "Biography", pt: "Biografia" }
+contact_profiles: { en: "Contact and profiles", pt: "Contato e perfis" }
+email: { en: "E-mail", pt: "E-mail" }
+phone: { en: "Phone", pt: "Telefone" }
+office: { en: "Office", pt: "Sala" }
+institutional_page: { en: "Institutional page", pt: "Página institucional" }
+pubs_with: { en: "Publications with GPMA", pt: "Publicações com o GPMA" }
+at_ita: { en: "Instituto Tecnológico de Aeronáutica", pt: "Instituto Tecnológico de Aeronáutica" }
+address: { en: "Address", pt: "Endereço" }
+links: { en: "Links", pt: "Links" }
+pause: { en: "Pause", pt: "Pausar" }
+play: { en: "Play", pt: "Reproduzir" }
+learn_more: { en: "About the group", pt: "Sobre o grupo" }
+lines:
+  "FFF process & materials": "Processo FFF e materiais"
+  "Process simulation": "Simulação de processo"
+  "Continuous-fibre composites": "Compósitos de fibra contínua"
+  "Design optimisation": "Otimização de projeto"
+  "Architected & bimaterial structures": "Estruturas arquitetadas e bimateriais"
+  "Homogenisation & micromechanics": "Homogeneização e micromecânica"
+  "Metal AM (L-PBF)": "MA de metais (L-PBF)"
+line_list:
+  - { en: "FFF process & materials", pt: "Processo FFF e materiais" }
+  - { en: "Process simulation", pt: "Simulação de processo" }
+  - { en: "Continuous-fibre composites", pt: "Compósitos de fibra contínua" }
+  - { en: "Design optimisation", pt: "Otimização de projeto" }
+  - { en: "Architected & bimaterial structures", pt: "Estruturas arquitetadas e bimateriais" }
+  - { en: "Homogenisation & micromechanics", pt: "Homogeneização e micromecânica" }
+  - { en: "Metal AM (L-PBF)", pt: "MA de metais (L-PBF)" }
+groups:
+  "Home institution": "Instituição sede"
+  "Academic partners": "Parceiros acadêmicos"
+  "Industry & research institutes": "Indústria e institutos de pesquisa"
+  "Funding agencies": "Agências de fomento"

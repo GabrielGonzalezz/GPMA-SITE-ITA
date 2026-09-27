@@ -1,0 +1,83 @@
+# Fields ending in _pt are the Portuguese (pt-BR) version.
+# status: current | past
+items:
+- title: CPE-FLYMOV – Engineering Research Center for the Future of Air Mobility
+  period: 2023–2027
+  funding: FAPESP / Embraer
+  status: current
+  text: GPMA takes part in the ADAM line (Advanced Design for Metal Additive Manufacturing) of this FAPESP–Embraer research centre hosted at ITA, with Unicamp and EESC/USP.
+  link: https://agencia.fapesp.br/centro-de-pesquisa-em-engenharia-para-a-mobilidade-aerea-do-futuro-abre-duas-vagas-de-pos-doutorado/50066
+  title_pt: CPE-FLYMOV – Centro de Pesquisa em Engenharia para a Mobilidade Aérea do Futuro
+  funding_pt: FAPESP / Embraer
+  text_pt: O GPMA participa da linha ADAM (Projeto Avançado para Manufatura Aditiva Metálica) deste centro de pesquisa FAPESP–Embraer sediado no ITA, com a Unicamp e a EESC/USP.
+  period_pt: 2023–2027
+- title: Numerical modelling of L-PBF and optimal design for additive manufacturing
+  period: 2024–
+  funding: CNPq (Ph.D.)
+  status: current
+  text: Thermomechanical simulation of laser powder bed fusion and homogenisation-based optimisation of support structures to mitigate distortion.
+  link: ''
+  title_pt: Modelagem numérica do L-PBF e projeto ótimo para manufatura aditiva
+  funding_pt: CNPq (doutorado)
+  text_pt: Simulação termomecânica da fusão em leito de pó a laser e otimização de estruturas de suporte baseada em homogeneização para mitigar distorções.
+  period_pt: 2024–
+- title: Surface residual stresses in L-PBF titanium parts
+  period: Ongoing
+  funding: M.Sc. research · CPE-FLYMOV
+  status: current
+  text: Measurement and modelling of surface residual stresses in titanium parts produced by laser powder bed fusion, supporting the optimisation of additively manufactured aerospace components.
+  link: ''
+  title_pt: Tensões residuais superficiais em peças de titânio produzidas por L-PBF
+  funding_pt: Mestrado · CPE-FLYMOV
+  text_pt: Medição e modelagem de tensões residuais superficiais em peças de titânio produzidas por fusão em leito de pó a laser, apoiando a otimização de componentes aeroespaciais fabricados por manufatura aditiva.
+  period_pt: Em andamento
+- title: Optimal design and characterisation of materials produced by 3D printing
+  period: 2019–2022
+  funding: CNPq Universal 407754/2018-0
+  status: past
+  text: Design and characterisation methods for 3D-printed materials, involving one M.Sc. and two Ph.D. projects.
+  link: ''
+  title_pt: Projeto ótimo e caracterização de materiais produzidos por impressão 3D
+  funding_pt: CNPq Universal 407754/2018-0
+  text_pt: Métodos de projeto e caracterização de materiais impressos em 3D, envolvendo um projeto de mestrado e dois de doutorado.
+  period_pt: 2019–2022
+- title: Hierarchical design of multi-material components produced by 3D printing
+  period: 2018–2019
+  funding: FAPESP (research abroad)
+  status: past
+  text: Research stay of Prof. Ferreira at the Centre for Additive Manufacturing, University of Nottingham.
+  link: ''
+  title_pt: Projeto hierárquico de componentes multimateriais produzidos por impressão 3D
+  funding_pt: FAPESP (pesquisa no exterior)
+  text_pt: Estágio de pesquisa do Prof. Ferreira no Centre for Additive Manufacturing da University of Nottingham.
+  period_pt: 2018–2019
+- title: Micromechanical analysis of honeycomb parts made by fused deposition (Ph.D. project)
+  period: 2017–2019
+  funding: FAPESP 2016/17835-6
+  status: past
+  text: Doctoral project of Rafael Quelho de Macedo, funded by a FAPESP scholarship.
+  link: ''
+  title_pt: Análise micromecânica de componentes tipo colmeia fabricados por deposição de material fundido (doutorado)
+  funding_pt: FAPESP 2016/17835-6
+  text_pt: Projeto de doutorado de Rafael Quelho de Macedo, com bolsa FAPESP.
+  period_pt: 2017–2019
+- title: Transtibial prosthesis in carbon-fibre composite via FDM
+  period: 2016–2020
+  funding: IPT – New Talents Program
+  status: past
+  text: Doctoral project within the IPT New Talents Program (Lightweight Structures Laboratory).
+  link: ''
+  title_pt: Prótese transtibial em compósito de fibra de carbono via FDM
+  funding_pt: IPT – Programa Novos Talentos
+  text_pt: Projeto de doutorado no Programa Novos Talentos do IPT (Laboratório de Estruturas Leves).
+  period_pt: 2016–2020
+- title: Hierarchical design of composites for 3D printing
+  period: 2015–2017
+  funding: FAPESP 2015/00159-5
+  status: past
+  text: Hierarchical (multiscale) design of fibre composites produced by 3D printing.
+  link: ''
+  title_pt: Projeto hierárquico de compósitos para impressão 3D
+  funding_pt: FAPESP 2015/00159-5
+  text_pt: Projeto hierárquico (multiescala) de compósitos de fibra produzidos por impressão 3D.
+  period_pt: 2015–2017

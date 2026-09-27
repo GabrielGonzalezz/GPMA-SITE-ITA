@@ -1,0 +1,1 @@
+{% if p.photo and p.photo != "" %}<img class="avatar" src="{{ p.photo | relative_url }}" alt="{{ p.name }}" loading="lazy">{% else %}{% assign _parts = p.name | split: " " %}<span class="avatar avatar--ph" aria-hidden="true">{{ _parts.first | slice: 0 }}{% if _parts.size > 1 %}{{ _parts.last | slice: 0 }}{% endif %}</span>{% endif %}

@@ -1,0 +1,23 @@
+# ------------------------------------------------------------
+#  GPMA website – main settings
+#  (edit via Pages CMS → "Site settings", or here directly)
+# ------------------------------------------------------------
+title: "GPMA · Additive Manufacturing Research Group"
+short_title: "GPMA"
+description: "Additive Manufacturing Research Group at Instituto Tecnológico de Aeronáutica (ITA), São José dos Campos, Brazil."
+# For https://<user>.github.io/<repo> set baseurl to "/<repo>".
+# For a custom domain (e.g. gpma.ita.br) leave it empty.
+baseurl: ""
+url: ""
+
+collections:
+  people:
+    output: true
+    permalink: /people/:name/
+
+defaults:
+  - scope: { path: "", type: people }
+    values: { layout: person }
+
+markdown: kramdown
+exclude: [README.md, EDITING-GUIDE.md, Gemfile, Gemfile.lock, vendor, tools]

@@ -1,0 +1,5 @@
+<li class="pub" data-year="{{ pub.year }}" data-line="{{ pub.line }}" data-type="{{ pub.type }}">
+  <p class="pub__title">{% if pub.doi and pub.doi != "" %}<a href="https://doi.org/{{ pub.doi }}">{{ pub.title }}</a>{% else %}{{ pub.title }}{% endif %}</p>
+  <p class="pub__authors">{{ pub.authors }}</p>
+  <p class="pub__venue"><em>{{ pub.venue }}</em>, {{ pub.year }}{% if pub.doi and pub.doi != "" %} · <a class="pub__doi" href="https://doi.org/{{ pub.doi }}">doi:{{ pub.doi }}</a>{% endif %}<span class="pub__line">{% assign _en = pub.line %}{% assign _pt = site.data.i18n.lines[pub.line] %}{% include tx.html %}</span></p>
+</li>

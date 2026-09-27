@@ -1,0 +1,130 @@
+# Fields ending in _pt are the Portuguese (pt-BR) version. If empty, the English text is shown.
+# group: Home institution | Academic partners | Industry & research institutes | Funding agencies
+# logo: path to an image in assets/img/logos (leave empty to show the short name)
+items:
+- name: Instituto Tecnológico de Aeronáutica
+  short: ITA
+  country: Brazil
+  group: Home institution
+  logo: /assets/img/logos/ita.png
+  url: https://www.ita.br
+  work: Home of GPMA, at the Aerospace Structures Laboratory of the Mechanical Engineering Division.
+  work_pt: Sede do GPMA, no Laboratório de Estruturas Aeroespaciais da Divisão de Engenharia Mecânica.
+  country_pt: Brasil
+- name: University of Nottingham – Centre for Additive Manufacturing
+  short: Nottingham
+  country: United Kingdom
+  group: Academic partners
+  logo: /assets/img/logos/nottingham.png
+  url: https://www.nottingham.ac.uk/research/groups/cfam/
+  work: Postdoctoral research stay of Prof. Ferreira (2018–2019, FAPESP); fibre-path optimisation and VOLCO-X with Prof. Ian Ashcroft.
+  work_pt: Pós-doutorado do Prof. Ferreira (2018–2019, FAPESP); otimização de trajetórias de fibra e VOLCO-X com o Prof. Ian Ashcroft.
+  country_pt: Reino Unido
+- name: Loughborough University
+  short: Loughborough
+  country: United Kingdom
+  group: Academic partners
+  logo: /assets/img/logos/loughborough.png
+  url: https://www.lboro.ac.uk/
+  work: Development of VOLCO-X and co-supervision of research on bimaterial honeycombs with Dr Andrew Gleadall.
+  work_pt: Desenvolvimento do VOLCO-X e coorientação da pesquisa em colmeias bimateriais com o Dr. Andrew Gleadall.
+  country_pt: Reino Unido
+- name: Instituto Superior Técnico – IDMEC
+  short: IST Lisboa
+  country: Portugal
+  group: Academic partners
+  logo: /assets/img/logos/ist.png
+  url: https://tecnico.ulisboa.pt/
+  work: Asymptotic homogenisation and hierarchical optimisation with Prof. José Miranda Guedes and Prof. Hélder Rodrigues.
+  work_pt: Homogeneização assintótica e otimização hierárquica com o Prof. José Miranda Guedes e o Prof. Hélder Rodrigues.
+  country_pt: Portugal
+- name: Chalmers University of Technology
+  short: Chalmers
+  country: Sweden
+  group: Academic partners
+  logo: /assets/img/logos/chalmers.svg
+  url: https://www.chalmers.se/
+  work: Failure criteria and representative volumes for printed continuous-fibre composites with Prof. Leif Asp, Prof. Ragnar Larsson and Dr Brina Blinzler.
+  work_pt: Critérios de falha e volumes representativos para compósitos de fibra contínua impressos com o Prof. Leif Asp, o Prof. Ragnar Larsson e a Dra. Brina Blinzler.
+  country_pt: Suécia
+- name: Universidade da Beira Interior
+  short: UBI
+  country: Portugal
+  group: Academic partners
+  logo: /assets/img/logos/ubi.png
+  url: https://www.ubi.pt/
+  work: Optimisation of printed fibre composites with Prof. Thiago Assis Dutra, a GPMA alumnus.
+  work_pt: Otimização de compósitos de fibra impressos com o Prof. Thiago Assis Dutra, egresso do GPMA.
+  country_pt: Portugal
+- name: Universidade Estadual de Campinas
+  short: Unicamp
+  country: Brazil
+  group: Academic partners
+  logo: /assets/img/logos/unicamp.svg
+  url: https://www.unicamp.br/
+  work: Partner institution in the CPE-FLYMOV research centre.
+  work_pt: Instituição parceira do centro de pesquisa CPE-FLYMOV.
+  country_pt: Brasil
+- name: Universidade de São Paulo – EESC
+  short: USP
+  country: Brazil
+  group: Academic partners
+  logo: /assets/img/logos/usp.svg
+  url: https://eesc.usp.br/
+  work: Partner institution in the CPE-FLYMOV research centre.
+  work_pt: Instituição parceira do centro de pesquisa CPE-FLYMOV.
+  country_pt: Brasil
+- name: Universidade Estadual de Ponta Grossa
+  short: UEPG
+  country: Brazil
+  group: Academic partners
+  logo: /assets/img/logos/uepg.png
+  url: https://www.uepg.br/
+  work: Research on bimaterial honeycomb structures with Prof. Benjamim de Melo Carvalho.
+  work_pt: Pesquisa em estruturas colmeia bimateriais com o Prof. Benjamim de Melo Carvalho.
+  country_pt: Brasil
+- name: Embraer
+  short: Embraer
+  country: Brazil
+  group: Industry & research institutes
+  logo: /assets/img/logos/embraer.png
+  url: https://embraer.com/
+  work: Industrial partner of the CPE-FLYMOV research centre on the future of air mobility.
+  work_pt: Parceira industrial do centro de pesquisa CPE-FLYMOV sobre a mobilidade aérea do futuro.
+  country_pt: Brasil
+- name: Instituto de Pesquisas Tecnológicas – Lightweight Structures Laboratory
+  short: IPT
+  country: Brazil
+  group: Industry & research institutes
+  logo: ''
+  url: https://www.ipt.br/
+  work: Characterisation of printed composites and the IPT New Talents programme.
+  work_pt: Caracterização de compósitos impressos e Programa Novos Talentos do IPT.
+  country_pt: Brasil
+- name: São Paulo Research Foundation
+  short: FAPESP
+  country: Brazil
+  group: Funding agencies
+  logo: /assets/img/logos/fapesp.png
+  url: https://fapesp.br/
+  work: ''
+  work_pt: ''
+  country_pt: Brasil
+- name: National Council for Scientific and Technological Development
+  short: CNPq
+  country: Brazil
+  group: Funding agencies
+  logo: /assets/img/logos/cnpq.png
+  url: https://www.gov.br/cnpq/
+  work: ''
+  work_pt: ''
+  country_pt: Brasil
+- name: Coordination for the Improvement of Higher Education Personnel
+  short: CAPES
+  country: Brazil
+  group: Funding agencies
+  logo: /assets/img/logos/capes.svg
+  url: https://www.gov.br/capes/
+  work: ''
+  work_pt: ''
+  country_pt: Brasil

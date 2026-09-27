@@ -1,0 +1,38 @@
+# Fields ending in _pt are the Portuguese (pt-BR) version. If empty, the English text is shown.
+# Newest first. image: a figure from the paper or a photo (optional)
+items:
+- date: '2026'
+  title: Bimaterial honeycomb structures published in Composite Structures
+  text: Design, asymptotic homogenisation and compression testing of honeycombs printed with short carbon-fibre composites, with Loughborough University and UEPG.
+  image: /assets/img/news/bimaterial-honeycombs-2026.jpg
+  link: https://doi.org/10.1016/j.compstruct.2026.120071
+  title_pt: Estruturas colmeia bimateriais publicadas na Composite Structures
+  text_pt: Projeto, homogeneização assintótica e ensaios de compressão de colmeias impressas com compósitos de fibra de carbono curta, com a Loughborough University e a UEPG.
+- date: '2026'
+  title: Material orientation design for printed fibre composites
+  text: Principal-stress directions are partitioned into design subregions and converted into printable material curves for variable-stiffness composites.
+  image: /assets/img/news/material-orientations-2026.jpg
+  link: https://doi.org/10.1007/s40430-026-06563-8
+  title_pt: Projeto de orientação de material para compósitos impressos
+  text_pt: Direções de tensões principais são particionadas em sub-regiões de projeto e convertidas em curvas de material imprimíveis para compósitos de rigidez variável.
+- date: '2026'
+  title: Two papers on support structures for laser powder bed fusion
+  text: Thermomechanical simulation and homogenisation-based optimisation of L-PBF supports to mitigate distortion, in MATEC Web of Conferences.
+  image: /assets/img/research/metal.svg
+  link: https://doi.org/10.1051/matecconf/202642203003
+  title_pt: Dois artigos sobre estruturas de suporte para fusão em leito de pó
+  text_pt: Simulação termomecânica e otimização baseada em homogeneização de suportes de L-PBF para mitigar distorções, na MATEC Web of Conferences.
+- date: '2024'
+  title: VOLCO-X applied to microstructure optimisation
+  text: Voxel-based simulation of deposited strands used to optimise printed microstructures, with Loughborough University and the University of Nottingham.
+  image: /assets/img/news/volcox-microstructures-2024.jpg
+  link: https://doi.org/10.1016/j.addma.2024.104430
+  title_pt: VOLCO-X aplicado à otimização de microestruturas
+  text_pt: Simulação baseada em voxels de filamentos depositados usada para otimizar microestruturas impressas, com a Loughborough University e a University of Nottingham.
+- date: '2023'
+  title: GPMA joins the CPE-FLYMOV research centre
+  text: The group contributes to the metal additive manufacturing line of the FAPESP–Embraer Engineering Research Center for the Future of Air Mobility, hosted at ITA.
+  image: /assets/img/facilities/ita-campus.jpg
+  link: https://namidia.fapesp.br/embraer-ita-e-fapesp-inauguram-centro-de-pesquisa-em-engenharia-para-acelerar-a-mobilidade-aerea-do-futuro/427513
+  title_pt: GPMA passa a integrar o centro de pesquisa CPE-FLYMOV
+  text_pt: O grupo contribui para a linha de manufatura aditiva de metais do Centro de Pesquisa em Engenharia para a Mobilidade Aérea do Futuro, FAPESP–Embraer, sediado no ITA.
